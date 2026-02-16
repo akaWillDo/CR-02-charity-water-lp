@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: 32px 36px;
   position: absolute;
   width: 100%;
   top: 0;
@@ -42,11 +42,11 @@ body {
 }
 
 .logo {
-  height: 22px;
+  height: 36px;
 }
 
 .brand {
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
@@ -57,15 +57,15 @@ body {
   flex: 1;
   justify-content: flex-end;
   padding-right: 10px;
-  gap: 125px;
+  gap: 560px;
 }
 
 .realstories-btn {
   background: #ffc907;
   color: white;
   border: none;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 20px 32px;
+  font-size: 21px;
   font-weight: bold;
   font-family: Proxima Nova;
   border-radius: 8px;
@@ -76,8 +76,8 @@ body {
   background: #ffc907;
   color: white;
   border: none;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 20px 32px;
+  font-size: 21px;
   font-weight: bold;
   font-family: Proxima Nova;
   border-radius: 8px;
@@ -88,8 +88,8 @@ body {
   background: #ffc907;
   color: white;
   border: none;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 20px 32px;
+  font-size: 21px;
   font-weight: bold;
   font-family: Proxima Nova;
   border-radius: 8px;
@@ -110,44 +110,48 @@ body {
   background: #ffc907;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 100px;
+  justify-content: center;
+  padding: 0 40px;
   overflow: hidden;
 }
 
 .hero-content {
-  max-width: 1100px;
+  max-width: 980px;
   z-index: 2;
-  /* Let the text stretch wider */
-  max-width: 100%;
-  text-align: left;
+  text-align: center;
   /* Move all left-side text upward as a group */
-  padding-top: 60px;
+  padding-top: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h1 {
   color: white;
+  /* Keep the headline on one line */
   white-space: nowrap;
   /* Center the headline while keeping it on one line */
   text-align: center;
-  font-size: 48px; /* tweak if needed */
+  font-size: 72px; /* tweak if needed */
+  letter-spacing: 1px;
   line-height: 1.1;
   /* Tighten the gap so the paragraph sits right below */
-  margin-bottom: 20px;
+  margin-bottom: 190px;
   font-weight: 600;
 }
 
 .hero p {
   color: white;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.6;
   /* Center the paragraph within the left section */
   text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 980px;
+  margin-left: 0;
+  margin-right: 0;
   /* Smaller gap so the paragraph sits closer to the headline */
-  margin-bottom: 20px;
+  margin-bottom: 180px;
 }
 
 /* CTA */
@@ -155,41 +159,42 @@ body {
   background: #2e9af7;
   color: white;
   border: none;
-  padding: 18px 40px;
-  font-size: 20px;
+  padding: 26px 60px;
+  font-size: 28px;
   border-radius: 10px;
   cursor: pointer;
   /* Center the button inside the left section */
   display: block;
   /* Push the button (and everything below it) lower */
-  margin: 60px auto 6px;
+  margin: 0 0 24px;
   font-weight: bold;
 }
 
 /* TRUST TEXT */
 .trust {
   color: #4fcb53;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   /* Center the text under the button */
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
 /* TAGLINE */
 .tagline {
   color: white;
-  font-size: 25px;
+  font-size: 36px;
   font-weight: bold;
   /* Center the tagline within the left section */
   text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 980px;
+  margin-left: 0;
+  margin-right: 0;
   opacity: 0.95;
   /* Add space above so the tagline sits lower */
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin-top: 200px;
+  margin-bottom: 440px;
 }
 
 /* DIAGONAL SHAPE */
@@ -223,22 +228,22 @@ body {
 @media (max-width: 900px) {
   /* Keep the same layout, but shrink sizes to fit smaller screens */
   .navbar {
-    padding: 16px 12px;
+    padding: 24px 20px;
   }
 
   .nav-buttons {
-    gap: 10px;
+    gap: 28px;
   }
 
   .logo {
-    height: 22px;
+    height: 30px;
   }
 
   .realstories-btn,
   .mission-btn,
   .signin-btn {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 19px;
+    padding: 16px 24px;
   }
 
   .hero-left {
@@ -246,25 +251,87 @@ body {
   }
 
   .hero-content {
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   .hero h1 {
-    font-size: 32px;
+    font-size: 44px;
+    white-space: nowrap;
+    margin-bottom: 120px;
   }
 
   .hero p {
-    font-size: 14px;
+    font-size: 18px;
     max-width: 100%;
+    margin-bottom: 110px;
   }
 
   .cta {
-    font-size: 16px;
-    padding: 12px 28px;
+    font-size: 20px;
+    padding: 16px 36px;
+    margin-bottom: 20px;
+  }
+
+  .trust {
+    margin-bottom: 50px;
   }
 
   .tagline {
+    font-size: 22px;
+    margin-top: 150px;
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Make large spacing and text fit on small screens */
+  .navbar {
+    padding: 20px 16px;
+  }
+
+  .nav-buttons {
+    gap: 12px;
+  }
+
+  .logo {
+    height: 28px;
+  }
+
+  .realstories-btn,
+  .mission-btn,
+  .signin-btn {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .hero-content {
+    padding-top: 160px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    white-space: nowrap;
+    margin-bottom: 90px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 90px;
+  }
+
+  .cta {
+    font-size: 18px;
+    padding: 14px 30px;
+  }
+
+  .trust {
     font-size: 16px;
     margin-bottom: 40px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    margin-top: 120px;
+    margin-bottom: 140px;
   }
 }
